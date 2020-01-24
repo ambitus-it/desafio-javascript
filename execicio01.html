@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escrevento</title>
+    <style>
+        body p{
+            color: blue;
+            font-size: 18pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="button" value="Click para escrever" onclick="escrever()">
+    <p id="texto"></p>
+
+    <script>
+         
+        function escrever(){
+            var a = ['a' , 'm' , 'b' , 'i' , 't' , 'u' , 's', '.' , 'i' , 'o']
+            var res = document.getElementById('texto')
+            res.innerHTML= a[0]+ a[1]+ a[2] + a[3]+ a[4]+ a[5]+ a[6]+ a[7]+ a[8] + a[9]
+        }    
+    </script>
+    
+</body>
+</html>
